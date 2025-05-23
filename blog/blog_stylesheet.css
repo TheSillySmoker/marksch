@@ -1,6 +1,6 @@
 body
 {
-	background-color: #9a7b7b;
+	background-color: #a86b6b;
 	text-align: center;
 }
 
@@ -21,12 +21,12 @@ h2
 	max-width: 900px;
 	margin: 50px auto;
 	padding: 20px;
-	background-color: #1e0c0f; 
+	background-color: #1a0a0d; 
 }
 
 .content p
 {
-	color: #bfb8b8;
+	color: #d6c2b8;
 }
 
 .footer1
