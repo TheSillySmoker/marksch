@@ -16,11 +16,6 @@ h2
 	text-align: centre;
 }
 
-p
-{
- color: white;
-}
-
 .content
 {
 	max-width: 600px;
@@ -31,5 +26,5 @@ p
 
 .content p
 {
-	color: white;
+	color: #e6e6e6;
 }
