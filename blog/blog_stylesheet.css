@@ -16,13 +16,17 @@ h2
 	text-align: centre;
 }
 
+p
+{
+ color: white;
+}
+
 .content
 {
 	max-width: 600px;
 	margin: 50px auto;
 	padding: 20px;
 	background-color: #2b1117 
-	color: white;
 }
 
 .content p
