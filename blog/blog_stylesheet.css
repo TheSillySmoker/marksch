@@ -22,9 +22,10 @@ h2
 	margin: 50px auto;
 	padding: 20px;
 	background-color: #2b1117 
+	color: white;
 }
 
-p
+.content p
 {
 	color: white;
 }
