@@ -4,7 +4,7 @@ body
 	text-align: center;
 }
 
-h1, h2
+h1, h2, h3
 {
 	color: #f5f0eb;
 	text-align: centre;
@@ -18,7 +18,7 @@ h1, h2
 	background-color: #1a0a0d; 
 }
 
-.content p
+p, i
 {
 	color: #e6e6e6;
 }
