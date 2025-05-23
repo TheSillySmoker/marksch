@@ -4,15 +4,9 @@ body
 	text-align: center;
 }
 
-h1
+h1, h2
 {
-	color: white;
-	text-align: center;
-}
-
-h2
-{
-	color: white;
+	color: #f5f0eb;
 	text-align: centre;
 }
 
