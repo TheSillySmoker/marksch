@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title> Mark Schroeder</title>
-	<link rel="stylesheet" href="blog_stylesheet.css">
-</head>
-<body>
-	<title> Mark Schroeder</title>
-	<div class="content">
-		<h2>Example Blog</h2>
-		<br>
-		<p>Testing out colours and stuff</p>
-	</div> 
-</body>
-</html>
+body
+{
+	background-color: #b29595;
+	text-align: center;
+}
+
+h1
+{
+	color: white;
+	text-align: center;
+}
+
+h2
+{
+	color: white;
+	text-align: centre;
+}
+
+.content
+{
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 20px;
+	background-color: #ffffff; /* white center box */
+}
