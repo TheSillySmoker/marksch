@@ -28,3 +28,9 @@ p, i, blockquote, dd
 	font-size: 70%;
 	color: #e6e6e6;
 }
+
+.long_hair_img
+{
+	width: 10%;
+	height: auto;
+}
