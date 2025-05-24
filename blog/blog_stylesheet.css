@@ -10,6 +10,17 @@ h1, h2, h3, h4, h5
 	text-align: centre;
 }
 
+h1 a
+{
+	color: #f5f0eb;
+	text-decoration: none;
+}
+
+h1 a:hover
+{
+	text-decoration: underline;
+}
+
 .content
 {
 	max-width: 900px;
