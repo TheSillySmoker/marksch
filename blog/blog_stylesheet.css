@@ -29,7 +29,7 @@ h1 a:hover
 	background-color: #1a0a0d; 
 }
 
-p, i, blockquote, dd
+p, i, blockquote, dd, tr, td, b
 {
 	color: #e6e6e6;
 }
