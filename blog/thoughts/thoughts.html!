@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Mark Schroeder</title>
+	<link rel="stylesheet" href="../blog_stylesheet.css">
+</head>
+
+<body>
+	<title> Mark Schroeder</title>
+	<div class="content">
+		<h1><a href="../../../index.html">Thought Wall</a></h1>
+		<h2>Thought of the day - 11 MAY 2025</h2>
+		<p>
+			Very often the answer to your question is obvious; Occam's razor.
+			When you ask yourself, will technology progress to the point where we don't need to drive cars manually any more? The obvious answer is yes.
+			When you ask yourself, is the solution to self driving a rigid, rules based, heuristic approach or is it a highly adaptable, truly smart, real world artificial intelligence?
+			The obvious answer is the latter.
+			In the complex world we live, hardcoded rules are unable to adapt to it.
+			It is only with the breakthrough of real world artificial intelligence that we can hope to understand and navigate its complexities without the human brain.
+		</p>
+	</div> 
+</body>
+</html>
