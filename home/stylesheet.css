@@ -13,7 +13,9 @@ h1, h3, h4
 h2
 {
 	color: #fadeff;
+	font-size: 110%;
 	text-align: center;
+	text-decoration: underline;
 }
 
 .profile_img
