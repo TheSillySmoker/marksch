@@ -52,7 +52,7 @@ p, i, blockquote, dd, tr, td, b
 	margin-right: auto;
 }
 
-button p
+button p, button b
 {
 	color: black;
 }
