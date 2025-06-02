@@ -42,8 +42,10 @@ p, i, blockquote, dd, tr, td, b
 
 .long_hair_img
 {
-	width: 25%;
+	max-height: 25%;
+	max-width: 25%;
 	height: auto;
+	width: auto;
 }
 
 .center
