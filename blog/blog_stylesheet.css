@@ -25,7 +25,7 @@ h1 a:hover
 {
 	max-width: 900px;
 	margin: 50px auto;
-	padding: 20px;
+	padding: 50px;
 	background-color: #1a0a0d; 
 }
 
@@ -36,7 +36,7 @@ i, blockquote, dd, tr, td, b
 
 p
 {
-	font-size: 21px;
+	font-size: 18px;
 	color: #e6e6e6;
 }	
 
