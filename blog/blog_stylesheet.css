@@ -54,6 +54,14 @@ p
 	width: auto;
 }
 
+.meme_img
+{
+	max-height: 25%;
+	max-width: 25%;
+	height: auto;
+	width: auto;
+}
+
 .center
 {
 	margin-left: auto;
