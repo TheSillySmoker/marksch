@@ -1,6 +1,6 @@
 #! /bin/bash
 
-cd /home/mark/Documents/marksch
+cd ~/Documents/marksch
 
 git add --all
 git commit -a -m "c"
