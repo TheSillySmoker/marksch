@@ -74,7 +74,9 @@ p
 {
 	.standard_img
 	{
-		height: 200px;
+		max-height: 50%;
+		max-width: 50%;
+		height: auto;
 		width: auto;
 	}
 }
