@@ -62,6 +62,23 @@ p
 	width: auto;
 }
 
+.standard_img
+{
+	max-height: 25%;
+	max-width: 25%;
+	height: auto;
+	width: auto;
+}
+
+@media(max-width: 600px)
+{
+	.standard_img
+	{
+		height: 500px;
+		width: auto;
+	}
+}
+
 .center
 {
 	margin-left: auto;
