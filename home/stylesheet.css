@@ -52,13 +52,17 @@ h3, h4
 		width: 60%;
 		height: 60%;
 	}	
-	.button b
+	.button
 	{
 		background-color: #BEBEBE;
 		color: black;
 		font-size 180%;
 		border-radius: 3px;
 		margin: 5px;
+	}
+	b
+	{
+		font-size: 180%;
 	}
 }
 
