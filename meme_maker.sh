@@ -1,12 +1,12 @@
 #!/bin/bash
 echo "enter file name"
-read file
+read -e file
 
 mv $file blog/meme_page/meme_images
 git add blog/meme_page/meme_images/$file
 
 vim -es "blog/meme_page/meme_page.html" <<EOF
-24insert
+19insert
 		<img src="meme_images/$file" class="standard_img"></img>
 .
 wq
