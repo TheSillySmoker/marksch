@@ -57,10 +57,11 @@ h3, h4
 		background-color: #BEBEBE;
 		color: black;
 		font-size 16px;
+		border-radius: 3px;
 	}
 	b
 	{
-		font-size: 200%;
+		font-size: 180%;
 	}
 }
 
