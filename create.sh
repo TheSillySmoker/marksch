@@ -56,7 +56,7 @@ fi
 echo "Your new article has been created in $variant/$article and a new button has been create in home.html on line $line"
 echo "Would you like to push the changes to github and have them pulled down by the vps? (y/n)"
 read push
-if [ push -eq "y" ];then
+if [ "$push" = "y" ];then
 	bash /home/mark/Documents/code/bashScripts/updateMarksch.sh
 else
 	echo "Okay, we won't push it for you."
