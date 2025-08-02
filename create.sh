@@ -1,5 +1,5 @@
 #! /bin/bash
-echo "Please enter the name of the new article:"
+echo "Please enter the name of the new article (this will be the name of the folder created): "
 read article
 echo "Enter blog or home"
 read variant 
