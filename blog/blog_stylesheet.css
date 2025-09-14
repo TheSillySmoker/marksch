@@ -81,7 +81,7 @@ p
 	}
 	p, b, i 
 	{
-		font-size: 120%;
+		font-size: 115%;
 	}
 }
 
@@ -98,9 +98,9 @@ button p, button b
 
 a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):link 
 {
-  color: green;
+  color: lightblue;
   background-color: transparent;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):visited 
