@@ -1,0 +1,3 @@
+Portfolio
+	Use schportfolio to update all portfolio numbers
+	If TSLA purchases are made, add to the chart script, that's all that needs to be changed
