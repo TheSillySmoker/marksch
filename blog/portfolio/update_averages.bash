@@ -34,8 +34,8 @@ fi
 
 TSLA="${prices[0]}"
 MSTR="${prices[1]}"
-CRSP="${prices[2]}"
-ARKG="${prices[3]}"
+ARKG="${prices[2]}"
+CRSP="${prices[3]}"
 VAS="${prices[4]}"
 
 TODAY="$(date '+%d %B %Y')"
@@ -47,8 +47,8 @@ cp -a "$HTML_FILE" "$HTML_FILE.bak"
 if ! vim -Es "$HTML_FILE" \
   -c "%s/^\(\\s*TSLA:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$TSLA/e" \
   -c "%s/^\(\\s*MSTR:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$MSTR/e" \
-  -c "%s/^\(\\s*CRSP:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$CRSP/e" \
   -c "%s/^\(\\s*ARKG:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$ARKG/e" \
+  -c "%s/^\(\\s*CRSP:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$CRSP/e" \
   -c "%s/^\(\\s*VAS:.*Average price (AUD): \\$\\)\\zs[0-9.][0-9.]*/$VAS/e" \
   -c "%s/^\(.*Holdings as of \).*/\1$TODAY/e" \
   -c "wq"
