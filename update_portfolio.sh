@@ -5,5 +5,6 @@
 set -euo pipefail
 
 rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
+git rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 python3 blog/portfolio/TSLA_purchase_history/date_plot_chart3.py
 blog/portfolio/update_averages.sh

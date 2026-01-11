@@ -66,7 +66,6 @@ printf "\nWould you like to push the changes to github and have them pulled down
 read push
 if [ "$push" = "y" ];then
 	bash /home/mark/Documents/code/bashScripts/updateMarksch.sh
-	bash /home/mark/Documents/code/bashScripts/updateMarksch.sh
 else
 	echo "Okay, we won't push it for you."
 fi

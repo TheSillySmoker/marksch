@@ -3,7 +3,6 @@
 cd ~/Documents/marksch
 
 echo "Adding files"
-git rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 touch blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 git add -f blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 git add --all
