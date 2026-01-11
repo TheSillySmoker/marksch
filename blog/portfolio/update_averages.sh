@@ -2,7 +2,7 @@
 #Code written by ChatGPT, edited by Mark Schroeder 11 JAN 2026	
 set -euo pipefail
 
-HTML_FILE="portfolio.html"
+HTML_FILE="blog/portfolio/portfolio.html"
 
 if [[ ! -f "$HTML_FILE" ]]; then
   echo "Error: file not found: $HTML_FILE" >&2
