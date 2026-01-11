@@ -55,6 +55,8 @@ then
   exit 1
 fi
 
+echo "inputted average prices"
+
 echo
 echo "Paste 5 percentages (TSLA, MSTR, ARKG, CRSP, VAS), one per line."
 echo "You can include or omit the % sign. Example: 12.34% or 12.34"

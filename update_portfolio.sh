@@ -4,6 +4,8 @@
 
 set -euo pipefail
 
+cd ~/Documents/marksch
+
 rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 ../code/bashScripts/updateMarksch.sh
 #git rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
