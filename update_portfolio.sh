@@ -11,4 +11,5 @@ rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 #git rm blog/portfolio/TSLA_purchase_history/TSLA_purchases.png
 #git rm --cached blog/portfolio/tsla_purchase_history/tsla_purchases.png
 python3 blog/portfolio/TSLA_purchase_history/date_plot_chart3.py
+blog/portfolio/update_percentages.sh
 blog/portfolio/update_averages.sh
