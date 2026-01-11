@@ -61,3 +61,11 @@ echo "Prices updated."
 echo "Date set to $TODAY"
 echo "Backup saved as $HTML_FILE.bak"
 
+printf "\nWould you like to push the changes to github and have them pulled down by the vps? (y/n)"
+
+read push
+if [ "$push" = "y" ];then
+	bash /home/mark/Documents/code/bashScripts/updateMarksch.sh
+else
+	echo "Okay, we won't push it for you."
+fi
