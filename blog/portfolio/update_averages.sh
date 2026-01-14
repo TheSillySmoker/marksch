@@ -4,7 +4,7 @@
 set -euo pipefail
 
 # ------------------ EDIT THESE ------------------
-HTML_FILE="portfolio.html"
+HTML_FILE="blog/portfolio/portfolio.html"
 
 ODS_FILE="/run/user/1000/gvfs/smb-share:server=marks-macbook-air.local,share=sambashare/open_mark/open_marks_portfolio_mac.ods"   # <-- set this
 SHEET_NAME="Insights"                  # <-- set this exactly (case-sensitive)
