@@ -79,6 +79,9 @@ h3, h4
 	color: #e6e6e6;
 }
 
+.footer2{ position: fixed; left: 0; right: 0; bottom: 0; }
+
+
 footer
 {
 	font-size: 70%;
