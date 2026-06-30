@@ -11,10 +11,8 @@ SHEET_NAME="Insights"                  # <-- set this exactly (case-sensitive)
 
 # Cells in the sheet (set these)
 CELL_TSLA="E13"
-CELL_MSTR="E14"
-CELL_ARKG="E15"
-CELL_CRSP="E16"
-CELL_VAS="E17"
+CELL_SPCX="E14"
+CELL_MSTR="E15"
 # ------------------------------------------------
 
 die() { echo "Error: $*" >&2; exit 1; }
@@ -51,7 +49,7 @@ xlsx="$(ls -1 "$tmpdir"/*.xlsx 2>/dev/null | head -n 1 || true)"
 # Read the 5 cells from the converted XLSX
 mapfile -t prices < <(
 python3 - "$xlsx" "$SHEET_NAME" \
-  "$CELL_TSLA" "$CELL_MSTR" "$CELL_ARKG" "$CELL_CRSP" "$CELL_VAS" <<'PY'
+  "$CELL_TSLA" "$CELL_SPCX" "$CELL_MSTR" <<'PY'
 import sys
 from openpyxl import load_workbook
 
@@ -90,10 +88,8 @@ for i in "${!prices[@]}"; do
 done
 
 TSLA="$(printf "%.2f" "${prices[0]}")"
-MSTR="$(printf "%.2f" "${prices[1]}")"
-ARKG="$(printf "%.2f" "${prices[2]}")"
-CRSP="$(printf "%.2f" "${prices[3]}")"
-VAS="$(printf "%.2f" "${prices[4]}")"
+SPCX="$(printf "%.2f" "${prices[1]}")"
+MSTR="$(printf "%.2f" "${prices[2]}")"
 
 TODAY="$(date '+%d %B %Y')"
 
@@ -104,10 +100,8 @@ cp -a "$HTML_FILE" "$HTML_FILE.bak"
 # IMPORTANT: the trailing 'e' on each substitute prevents "pattern not found" from failing vim.
 if ! vim -Es "$HTML_FILE" \
   -c "%s/^\(\\s*TSLA:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$TSLA/e" \
+  -c "%s/^\(\\s*SPCX:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$SPCX/e" \
   -c "%s/^\(\\s*MSTR:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$MSTR/e" \
-  -c "%s/^\(\\s*ARKG:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$ARKG/e" \
-  -c "%s/^\(\\s*CRSP:.*Average price (USD): \\$\\)\\zs[0-9.][0-9.]*/$CRSP/e" \
-  -c "%s/^\(\\s*VAS:.*Average price (AUD): \\$\\)\\zs[0-9.][0-9.]*/$VAS/e" \
   -c "%s/^\(.*Holdings as of \).*/\1$TODAY/e" \
   -c "wq"
 then
@@ -116,7 +110,7 @@ then
 fi
 
 echo "Prices updated from ODS snapshot ($ODS_FILE) sheet '$SHEET_NAME'."
-echo "TSLA=$TSLA  MSTR=$MSTR  ARKG=$ARKG  CRSP=$CRSP  VAS=$VAS"
+echo "TSLA=$TSLA SPCX=$SPCX MSTR=$MSTR " 
 echo "Date set to $TODAY"
 echo "Backup saved as $HTML_FILE.bak"
 

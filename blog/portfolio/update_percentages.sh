@@ -10,10 +10,8 @@ SHEET_NAME="Insights"   # must match exactly (case-sensitive)
 
 # Cells in the sheet (set these to wherever your % live)
 CELL_TSLA_P="D21"
-CELL_MSTR_P="D22"
-CELL_ARKG_P="D23"
-CELL_CRSP_P="D24"
-CELL_VAS_P="D25"
+CELL_SPCX_P="D22"
+CELL_MSTR_P="D23"
 # ------------------------------------------------
 
 die() { echo "Error: $*" >&2; exit 1; }
@@ -50,7 +48,7 @@ xlsx="$(ls -1 "$tmpdir"/*.xlsx 2>/dev/null | head -n 1 || true)"
 # Read the 5 cells from the converted XLSX
 mapfile -t pcts < <(
 python3 - "$xlsx" "$SHEET_NAME" \
-  "$CELL_TSLA_P" "$CELL_MSTR_P" "$CELL_ARKG_P" "$CELL_CRSP_P" "$CELL_VAS_P" <<'PY'
+  "$CELL_TSLA_P" "$CELL_SPCX_P" "$CELL_MSTR_P" <<'PY'
 import sys
 from openpyxl import load_workbook
 
@@ -95,7 +93,7 @@ for c in cells:
 PY
 )
 
-[[ "${#pcts[@]}" -eq 5 ]] || die "Expected 5 percentage values, got ${#pcts[@]}."
+[[ "${#pcts[@]}" -eq 3 ]] || die "Expected 3 percentage values, got ${#pcts[@]}."
 
 # Validate numeric
 for i in "${!pcts[@]}"; do
@@ -106,10 +104,8 @@ done
 
 # Round to 2 decimals (no % sign)
 TSLA_P="$(printf "%.2f" "${pcts[0]}")"
-MSTR_P="$(printf "%.2f" "${pcts[1]}")"
-ARKG_P="$(printf "%.2f" "${pcts[2]}")"
-CRSP_P="$(printf "%.2f" "${pcts[3]}")"
-VAS_P="$(printf "%.2f" "${pcts[4]}")"
+SPCX_P="$(printf "%.2f" "${pcts[1]}")"
+MSTR_P="$(printf "%.2f" "${pcts[2]}")"
 
 # Backup
 cp -a "$HTML_FILE" "$HTML_FILE.pct.bak"
@@ -117,16 +113,14 @@ cp -a "$HTML_FILE" "$HTML_FILE.pct.bak"
 # Updates the number after "TICKER:" and before the "%" sign.
 if ! vim -Es "$HTML_FILE" \
   -c "%s/^\(\s*TSLA:\s*\)\zs[0-9.][0-9.]*/$TSLA_P/e" \
+  -c "%s/^\(\s*SPCX:\s*\)\zs[0-9.][0-9.]*/$SPCX_P/e" \
   -c "%s/^\(\s*MSTR:\s*\)\zs[0-9.][0-9.]*/$MSTR_P/e" \
-  -c "%s/^\(\s*ARKG:\s*\)\zs[0-9.][0-9.]*/$ARKG_P/e" \
-  -c "%s/^\(\s*CRSP:\s*\)\zs[0-9.][0-9.]*/$CRSP_P/e" \
-  -c "%s/^\(\s*VAS:\s*\)\zs[0-9.][0-9.]*/$VAS_P/e" \
   -c "wq"
 then
   die "vim failed to update the file. Backup kept at: $HTML_FILE.pct.bak"
 fi
 
 echo "Percentages updated from ODS snapshot ($ODS_FILE) sheet '$SHEET_NAME'."
-echo "TSLA=$TSLA_P%  MSTR=$MSTR_P%  ARKG=$ARKG_P%  CRSP=$CRSP_P%  VAS=$VAS_P%"
+echo "TSLA=$TSLA_P% SPCX=$SPCX_P% MSTR=$MSTR_P%" 
 echo "Backup saved as $HTML_FILE.pct.bak"
 
