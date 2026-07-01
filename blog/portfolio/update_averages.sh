@@ -78,7 +78,7 @@ for c in cells:
 PY
 )
 
-[[ "${#prices[@]}" -eq 5 ]] || die "Expected 5 values, got ${#prices[@]}."
+[[ "${#prices[@]}" -eq 3 ]] || die "Expected 3 values, got ${#prices[@]}."
 
 # Validate numeric
 for i in "${!prices[@]}"; do
