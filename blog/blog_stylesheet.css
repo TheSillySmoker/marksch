@@ -77,6 +77,12 @@ p
 		height: auto;
 		display: block;
 	}
+	.chart_image
+	{
+		width: auto;
+		height: auto;
+		display: block;
+	}
 	p, b, i 
 	{
 		font-size: 120%;
