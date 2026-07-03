@@ -69,6 +69,13 @@ p
 	display: block;
 }
 
+.chart_img
+{
+	width: 650px;
+	height: auto;
+	display: block;
+}
+
 @media(max-width: 600px)
 {
 	.standard_img
@@ -77,9 +84,9 @@ p
 		height: auto;
 		display: block;
 	}
-	.chart_image
+	.chart_img
 	{
-		width: auto;
+		width: 10%;
 		height: auto;
 		display: block;
 	}
