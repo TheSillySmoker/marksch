@@ -45,6 +45,11 @@ p
 	color: #e6e6e6;
 }	
 
+button *, button p, button b
+{
+	color: black;
+}
+
 .footer1
 {
 	font-size: 70%;
@@ -101,7 +106,6 @@ p
 	}
 	.content
 	{
-		box-sizing: boarder-box;
 		padding: 20px;
 		overflow-x: hidden;
 }
@@ -110,11 +114,6 @@ p
 {
 	margin-left: auto;
 	margin-right: auto;
-}
-
-button p, button b
-{
-	color: black;
 }
 
 a:not(h1 a):not(h2 a):not(h3 a):not(h4 a):not(h5 a):not(h6 a):link 
