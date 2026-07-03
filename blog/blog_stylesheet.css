@@ -73,8 +73,7 @@ p
 {
 	.standard_img
 	{
-		max-height: 100%;
-		max-width: 10%;
+		width: 25%;
 		height: auto;
 		display: block;
 	}
