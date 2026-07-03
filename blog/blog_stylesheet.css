@@ -71,7 +71,7 @@ p
 
 .chart_img
 {
-	width: 650px;
+	width: 30%;
 	height: auto;
 	display: block;
 }
@@ -86,7 +86,7 @@ p
 	}
 	.chart_img
 	{
-		width: 10%;
+		width: 25%;
 		height: auto;
 		display: block;
 	}
