@@ -82,6 +82,9 @@ p
 	{
 		font-size: 120%;
 	}
+	.content
+	{
+		overflow-x: hidden;
 }
 
 .center
