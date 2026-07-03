@@ -1,3 +1,8 @@
+*
+{
+	box-sizing: border-box;
+}
+
 body
 {
 	background-color: #a86b6b;
@@ -23,10 +28,10 @@ h1 a:hover
 
 .content
 {
-/*	max-width: 900px;*/
+	max-width: 900px;
 	margin: 100px auto;
 	padding: 50px;
-	/*background-color: #1a0a0d; */
+	background-color: #1a0a0d;
 }
 
 i, blockquote, dd, tr, td, b
