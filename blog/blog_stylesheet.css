@@ -68,6 +68,7 @@ p
 	max-width: 25%;
 	height: auto;
 	width: auto;
+	display: block;
 }
 
 @media(max-width: 600px)
@@ -78,6 +79,7 @@ p
 		max-width: 100%;
 		height: auto;
 		width: auto;
+		display: block;
 	}
 	p, b, i 
 	{
