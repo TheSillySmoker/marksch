@@ -84,6 +84,8 @@ p
 	}
 	.content
 	{
+		box-sizing: boarder-box;
+		padding: 20px;
 		overflow-x: hidden;
 }
 
