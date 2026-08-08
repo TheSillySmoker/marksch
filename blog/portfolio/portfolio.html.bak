@@ -12,7 +12,7 @@
 		<h1><a href="/">Stock Portfolio</a></h1>	
 		<h3>Tesla Inc.</h3>
 		<p>	
-			TSLA: 87.89%	   -   Average price (USD): $235.85 
+			TSLA: 87.89%	   -   Average price (USD): $237.06 
 		</p>
 		<a href="/blog/portfolio/TSLA_purchase_history/TSLA_purchase_history.html"><button class="button"><b>TSLA Purchase History</b></button></a>
 		<br><br>
@@ -34,7 +34,7 @@
 			These are not recommendations. This is just me documenting my investing journey. 
 		</p>
 		<br>
-		<footer class="footer1">Holdings as of 01 July 2026</footer>
+		<footer class="footer1">Holdings as of 08 August 2026
 		<br>
 		<a href="/"><button class="button"><b>Back to Home</b></button></a>
 	</div> 
