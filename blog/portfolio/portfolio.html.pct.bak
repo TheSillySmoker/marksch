@@ -9,27 +9,34 @@
 <body>
 	<title> Mark Schroeder</title>
 	<div class="content">
-		<img src="/blog/portfolio/stonks.jpg" class="standard_img"></img>
 		<h1><a href="/">Stock Portfolio</a></h1>	
-		<br>
+		<h3>Tesla Inc.</h3>
 		<p>	
 			TSLA: 89.72%	   -   Average price (USD): $235.85 
 		</p>
 		<a href="/blog/portfolio/TSLA_purchase_history/TSLA_purchase_history.html"><button class="button"><b>TSLA Purchase History</b></button></a>
+		<br><br>
+		<h3>Space Exploration Technologies Corp.</h3>
 		<p>	
 			SPCX: 3.56%	   -   Average price (USD): $147.32 
 		</p>
-		<br>
+		<a href="/blog/portfolio/SPCX_purchase_history/SPCX_purchase_history.html"><button class="button"><b>SPCX Purchase History</b></button></a>
+		<br><br>
+		<h3> Strategy Inc.</h3>
 		<p>	
 			MSTR: 6.00%	   -   Average price (USD): $162.47 
 		</p>
-		<br><br>
+		<a href="/blog/portfolio/MSTR_purchase_history/MSTR_purchase_history.html"><button class="button"><b>MSTR Purchase History</b></button></a>
+		<br><br><br>
+		<img src="/blog/portfolio/stonks.jpg" class="standard_img"></img>
+		<br><br><br>
 		<p>
 			These are not recommendations. This is just me documenting my investing journey. 
 		</p>
 		<br>
-		<footer class="footer1">Holdings as of 01 July 2026
-		</footer>
+		<footer class="footer1">Holdings as of 01 July 2026</footer>
+		<br>
+		<a href="/"><button class="button"><b>Back to Home</b></button></a>
 	</div> 
 </body>
 </html>
